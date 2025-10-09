@@ -2,12 +2,12 @@
 
 # Trading Application — High Availability Architecture
 
-## 📘 Overview
+## Overview
 This repository contains the **infrastructure design** for a **high-availability trading platform**.
 
 ---
 
-## 🏗️ Architecture Summary
+## Architecture Summary
 The architecture is built around **AWS managed services** to minimize operational overhead while maintaining high performance and reliability.
 
 ### Key features:
@@ -21,7 +21,7 @@ The architecture is built around **AWS managed services** to minimize operationa
 
 ---
 
-## 🧩 Components
+## Components
 
 ### **1. Compute / Application Layer**
 - **Amazon EC2 Auto Scaling Group** or **Amazon EKS (Kubernetes)** — scalable stateless app layer  
@@ -56,6 +56,6 @@ The architecture is built around **AWS managed services** to minimize operationa
 
 ---
 
-## 🗺️ Diagram
+## Diagram
 Architecture diagram (PlantUML format):
 
