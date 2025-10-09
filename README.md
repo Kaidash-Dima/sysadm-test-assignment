@@ -3,9 +3,7 @@
 # Trading Application — High Availability Architecture
 
 ## 📘 Overview
-This repository contains the **infrastructure design** for a **high-availability trading platform** capable of handling **10,000 transactions per second** with strict **< 1 ms latency** between the application and the database.
-
-The goal was to design a resilient, fault-tolerant system that ensures **maximum uptime (≤ 5 minutes of downtime per month)** and **data replication across two geographic regions**.
+This repository contains the **infrastructure design** for a **high-availability trading platform**.
 
 ---
 
