@@ -11,8 +11,10 @@ This repository contains the **infrastructure design** for a **high-availability
 The architecture is built around **AWS managed services** to minimize operational overhead while maintaining high performance and reliability.
 
 ### Key features:
-- Active-active setup across **two Availability Zones (Multi-AZ)**  
-- Cross-region disaster recovery via **RDS Read Replica**
+- **Hot–Warm architecture**:
+  - Primary region (Region A) actively serves all production traffic  
+  - Secondary region (Region B) runs a warm standby: Cross-Region Read Replica + minimal app capacity  
+- Cross-region disaster recovery
 - Autoscaling and stateless application tier  
 - Centralized logging, monitoring, and alerting  
 - Secure and encrypted data flow at every layer  
@@ -40,7 +42,6 @@ The architecture is built around **AWS managed services** to minimize operationa
 - **Amazon Route 53** — DNS-based failover and global health checks  
 - **AWS VPC** — private/public subnets, Security Groups, NACLs  
 - **AWS KMS** — encryption at rest and in transit  
-- **TLS termination** via **ACM certificates**  
 
 ### **4. Observability**
 - **Prometheus** — application and DB metrics  
